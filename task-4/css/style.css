@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family:"Tahoma", sans-serif;
+  background: url(../img/background.jpg);
+  background-repeat:repeat;
+  background-position:0 0;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+/*  outline: 1px dotted black;*/
+  border-bottom: 3px solid rgb(0, 0, 0);
+/*  background: rgb(255, 255, 255);*/
+  box-shadow: 0 0 8px rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  position: relative;
+  width: 1000px;
+/*  outline: 1px dotted red;*/
+}
+
+.logo {
+  margin-left:25px;
+  margin-top: 10px;
+  float: left;
+  /*  outline: 1px dotted green;*/
+}
+
+.contacts {
+  float: right;
+  margin-top: 10px;
+  margin-right: 30px;
+/*  outline: 1px dotted blue;*/
+}
+
+.contact-title {
+  margin-bottom: 5px;
+  font-family:"Tahoma", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(18, 138, 167);
+}
+
+.contact-phone {
+  margin-bottom: 5px;
+  font-family:"Tahoma", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: rgb(18, 138, 167);
+}
+
+.contact-mail {
+  margin-bottom: 10px;
+  font-family:"Tahoma", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: rgb(18, 138, 167);
+}
+
+.countries {
+  position: absolute;
+  left: 620px;
+  top: 110px;
+  clear: both;
+/*  outline: 1px dotted blue;*/
+}
+
+.icon {
+/*    outline: 2px solid rgba(0, 0, 0, 0.1);*/
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 42px;
+    height: 42px;
+    background-image:url(../img/spritesheet.png);
+    background-repeat:no-repeat;
+    background-position:0 0;
+}
+
+.countries-position .icon-nepal {
+  background-position: -5px -161px;
+}
+
+.countries-position .icon-india {
+  background-position: -5px -57px;
+}
+
+.countries-position .icon-tibet {
+  background-position: -5px -265px;
+}
+
+.countries-position .icon-sri-lanka {
+  background-position: -5px -213px;
+}
+
+.countries-position .icon-maldives {
+  background-position: -5px -109px;
+}
+
+.countries-position .icon-butan {
+  background-position: -5px -5px;
+}
+
+.countries-position {
+  position: relative;
+}
+
+.country-item {
+/*  position: absolute;*/
+  width: 55px;
+  position: relative;
+  display: inline-block;
+  padding-top: 42px;
+  vertical-align: top;
+/*  margin-right: 10px;*/
+  text-align: center;
+}
+
+.country-item a {
+  display: block;
+  font-family:"Tahoma", sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  color: rgb(18, 138, 167);
+  padding-top: 5px;
+/*  text-align: center;*/
+}
+
+.banner {
+  width: 1000px;
+  height: 237px;
+  border-bottom: 1px solid rgb(18, 138, 167);
+  border-top: 1px solid rgb(18, 138, 167);
+  clear: both;
+}
+.main-nav {
+  width: 1000px;
+  height: 30px;
+  background: rgb(51, 51, 51);
+  }
+
+.main-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.main-menu > li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-left: 40px;
+}
+
+.main-menu a {
+  position: relative;
+  display: block;
+  background: rgb(51, 51, 51);
+  padding: 5px 10px;
+  text-decoration: none;
+  font-family:"Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+}
+
+.main-menu a:hover {
+  text-decoration: underline;
+}
+
+.main-menu .sub-menu {
+  display: none;
+  background: rgb(51, 51, 51);
+  position: absolute;
+  width: 150px;
+}
+
+.main-menu > li:hover .sub-menu {
+  display: block;
+}
+ 
+main {
+  background: url(../img/background-content.jpg);
+  background-repeat:no-repeat;
+  background-position:0 0;
+  width: 1000px;
+  min-height: 550px;
+}
+
+.info {
+  float: left;
+  width: 210px;
+/*  outline: 1px dotted blue;*/
+  background-color: rgb(237, 238, 240);
+  border-right: 1px solid lightgrey;
+  min-height: 550px;
+}
+
+.info-title {
+  padding-top: 10px;
+  text-align: center;
+  font-family:"Tahoma", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(66, 76, 67);
+}
+
+.info, .news p {
+  padding-left: 15px;
+  font-family:"Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: rgb(66, 76, 67);
+}
+
+.index-content {
+  float: left;
+}
+
+.news {
+  float: right;
+  width: 210px;
+/*  outline: 1px dotted blue;*/
+  background-color: rgb(237, 238, 240);
+  border-left: 1px solid lightgrey;
+  min-height: 550px;
+}
+
+.news-title {
+  padding-top: 10px;
+  text-align: center;
+  font-family:"Tahoma", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(66, 76, 67);
+}
+
+.footer-copyright {
+  width: 250px;
+  margin: 0 auto;
+/*  outline: 1px dotted blue;*/
+  font-family:"Tahoma", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+  margin-top: 5px;
+}
+

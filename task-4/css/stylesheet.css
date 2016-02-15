@@ -1,0 +1,41 @@
+.sprite {
+    background-image: url(../img/spritesheet.png)
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-butan {
+    width: 42px;
+    height: 42px;
+    background-position: -5px -5px;
+}
+
+.sprite-india {
+    width: 42px;
+    height: 42px;
+    background-position: -5px -57px;
+}
+
+.sprite-maldives {
+    width: 42px;
+    height: 42px;
+    background-position: -5px -109px;
+}
+
+.sprite-nepal {
+    width: 42px;
+    height: 42px;
+    background-position: -5px -161px;
+}
+
+.sprite-sri-lanka {
+    width: 42px;
+    height: 42px;
+    background-position: -5px -213px;
+}
+
+.sprite-tibet {
+    width: 42px;
+    height: 42px;
+    background-position: -5px -265px;
+}
