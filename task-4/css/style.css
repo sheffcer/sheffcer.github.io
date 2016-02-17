@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family:"Tahoma", sans-serif;
-  background: url(../img/background.jpg);
-  background-repeat:repeat;
+  background: #0c75a0 url(../img/background.jpg) repeat-x;
+/*  background-repeat: repeat;*/
   background-position:0 0;
 }
 
@@ -190,12 +190,20 @@ body {
   display: block;
 }
  
+/*
 main {
   background: url(../img/background-content.jpg);
   background-repeat:no-repeat;
   background-position:0 0;
   width: 1000px;
   min-height: 550px;
+}
+*/
+
+.content-fon {
+  width: 1000px;
+  overflow: hidden;
+
 }
 
 .info {
@@ -204,7 +212,9 @@ main {
 /*  outline: 1px dotted blue;*/
   background-color: rgb(237, 238, 240);
   border-right: 1px solid lightgrey;
-  min-height: 550px;
+/*  min-height: 550px;*/
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
 }
 
 .info-title {
@@ -227,6 +237,8 @@ main {
 
 .index-content {
   float: left;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
 }
 
 .news {
@@ -235,7 +247,9 @@ main {
 /*  outline: 1px dotted blue;*/
   background-color: rgb(237, 238, 240);
   border-left: 1px solid lightgrey;
-  min-height: 550px;
+/*  min-height: 550px;*/
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
 }
 
 .news-title {
