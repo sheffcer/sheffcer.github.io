@@ -1,0 +1,49 @@
+body {
+  background: lightgrey;
+}
+
+.container {
+  margin: 0 auto;
+  width: 500px;
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 0;
+}
+
+td {
+/*  border: 1px solid grey;*/
+  width: 65px;
+  height: 65px;
+}
+
+.white {
+  background-color: #ffffff;
+/*  background-color: aqua;*/
+}
+
+.yellow {
+  background-color: #ffec5e;
+}
+
+.red {
+  background-color: #ff5e41;
+}
+
+.blue {
+  background-color: #054585;
+}
+
+.black {
+  background-color: #071611;
+}
+
+.bottom-border {
+  border-bottom: 10px solid black;
+}
+
+.right-border {
+  border-right: 10px solid black;
+}
