@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family:"Tahoma", sans-serif;
+/*  background: #6c6c6c url(../img/background.jpg) no-repeat;*/
+}
+
+.container {
+  margin: 0 auto;
+  width: 1215px;
+  min-height: 1019px;
+/*  outline: 1px dotted black;*/
+  font-family:"Tahoma", sans-serif;
+  background: #6c6c6c url(../img/background.jpg) no-repeat;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main-header {
+  width: 1215px;
+  min-height: 34px;
+  background-color: #085292;
+  margin-bottom: 212px;
+}
+
+.main-nav {
+  float: left;
+  width: 400px;
+  margin-left: 440px;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  text-align: top;
+}
+
+.main-nav li:last-child {
+  border-right: 1px solid #60b5ed;
+}
+
+.main-nav a {
+  display: block;
+  padding: 12px 15px;
+  text-decoration: none;
+  color: #60b5ed;
+  font-family:"Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.main-nav a:hover {
+  background-color: #4eabda;
+  color: #ffffff;
+}
+.user-block {
+  float: right;
+  width: 200px;
+  margin-right: 18px;
+  background: linear-gradient(to top, #2e7ac4, #50afdc);
+  
+}
+
+.user-block ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  padding-left: 10px;
+}
+
+.user-block li {
+  display: inline-block;
+  text-align: top;
+  color: #ffffff;
+  font-family:"Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.user-block a {
+  display: block;
+  padding: 12px 10px;
+  color: #ffffff;
+  font-family:"Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.user-status {
+  position: relative;
+  float: left;
+  width: 155px;
+  color: #ffffff;
+  font-family:"Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.user-status img {
+  padding-top: 10px;
+  margin-left: 15px;
+}
+
+.status-title {
+  position: absolute;
+  bottom: 13px;
+  left: 50px;
+}
+
+.main-title {
+  font-family:"Tahoma", sans-serif;
+  font-size: 24px;
+/*  line-height: 16px; как можеть быть бежстрочный интервал меньше размера шрифта?*/
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #d2d9d1;
+  margin-bottom: 36px;
+}
+
+/*
+.main-form {
+  margin: 0 auto;
+  width: 562px;
+  outline: 1px dotted red;
+  background: rgba(0, 0, 0, 0.63);
+}
+*/
+
+.main-facebook img {
+  margin: 0 auto;
+  display: block;
+  width: 276px;
+  height: 35px;
+  margin-bottom: 30px;
+}
+
+.form-title {
+  position: relative;
+  font-family:"Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #999999;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-title img {
+  position: absolute;
+  right: 143px;
+  top: 7px;
+}
+
+form {
+  margin: 0 auto;
+  width: 562px;
+/*  outline: 1px dotted red;*/
+  background: rgba(0, 0, 0, 0.63);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="mail"] {
+  width: 255px;
+  border:0px solid #ccc;
+  border-bottom: 1px solid #484948;
+  margin-left: 143px;
+/*  margin-bottom: 18px;*/
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family:"Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #cccccc;
+  background: #101010;
+}
+
+input:focus {
+  box-shadow: 0 0 15px #689bcc;
+  border-bottom: 1px solid #689bcc;
+  color: #ffffff;
+  background: #1b5288;
+}
+
+input[type="checkbox"] {
+  margin-left: 143px;
+}
+
+label {
+  font-family:"Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #cccccc;  
+}
+
+input[type="submit"]{
+  display:block;
+  margin: 0 auto;
+/*  margin-top:20px;*/
+  padding: 10px 10px;
+  border: 0;
+  border-radius: 3px;
+  border-top: 1px  solid #67c6e6;
+  font-family:"Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(to top, #2e7ac4, #4faddb);
+  margin-bottom: 20px;
+}
+
+.privacy {
+  width: 310px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  font-family:"Tahoma", sans-serif;
+  text-align: center;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #ffffff;
+}
