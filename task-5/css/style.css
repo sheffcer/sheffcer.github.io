@@ -22,15 +22,14 @@ body {
 
 .main-header {
   width: 1215px;
-  min-height: 34px;
+  height: 38px;
   background-color: #085292;
-  margin-bottom: 212px;
 }
 
 .main-nav {
   float: left;
-  width: 400px;
-  margin-left: 440px;
+  width:400px;
+  padding-left: 420px;
 }
 
 .main-nav ul {
@@ -64,8 +63,9 @@ body {
   color: #ffffff;
 }
 .user-block {
+  position: relative;
   float: right;
-  width: 200px;
+  width: 210px;
   margin-right: 18px;
   background: linear-gradient(to top, #2e7ac4, #50afdc);
   
@@ -81,6 +81,7 @@ body {
 
 .user-block li {
   display: inline-block;
+/*  float: left;*/
   text-align: top;
   color: #ffffff;
   font-family:"Tahoma", sans-serif;
@@ -131,14 +132,17 @@ body {
   margin-bottom: 36px;
 }
 
-/*
 .main-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 212px;
+/*
   margin: 0 auto;
   width: 562px;
   outline: 1px dotted red;
   background: rgba(0, 0, 0, 0.63);
-}
 */
+}
 
 .main-facebook img {
   margin: 0 auto;
@@ -166,7 +170,7 @@ body {
 }
 
 form {
-  margin: 0 auto;
+/*  margin: 0 auto;*/
   width: 562px;
 /*  outline: 1px dotted red;*/
   background: rgba(0, 0, 0, 0.63);
