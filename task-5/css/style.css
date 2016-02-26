@@ -28,8 +28,8 @@ body {
 
 .main-nav {
   float: left;
-  width:400px;
-  padding-left: 420px;
+  width:405px;
+  padding-left: 415px;
 }
 
 .main-nav ul {
@@ -133,15 +133,11 @@ body {
 }
 
 .main-form {
-  display: flex;
-  justify-content: center;
-  margin-top: 212px;
-/*
-  margin: 0 auto;
-  width: 562px;
-  outline: 1px dotted red;
-  background: rgba(0, 0, 0, 0.63);
-*/
+   width: 100%;
+   height: 100%;
+/*   position: absolute;*/
+   top: 0;
+   left: 0;
 }
 
 .main-facebook img {
@@ -172,6 +168,13 @@ body {
 form {
 /*  margin: 0 auto;*/
   width: 562px;
+  height: 634px;
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 /*  outline: 1px dotted red;*/
   background: rgba(0, 0, 0, 0.63);
 }
