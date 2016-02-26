@@ -180,13 +180,17 @@ input[type="password"] {
   margin-top: 5px;
 }
 
+/*
 .main-navigation li:nth-child(3) {
   padding-left: 6px;
 } 
+*/
 
+/*
 .main-navigation li:nth-child(4) {
   padding-left: 4px;
 } 
+*/
 
 .main-navigation a {
 /*  text-transform: uppercase;*/
@@ -208,7 +212,10 @@ input[type="password"] {
 
 .main-navigation a:hover {
   background: linear-gradient(to top, #0e385d, #1e6383);
-  padding: 3px 17px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 17px;
+  padding-right: 9px;
   border-radius: 20px;
   color: #ffffff;
 }
