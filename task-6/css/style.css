@@ -233,6 +233,10 @@ input[type="password"] {
   margin-left: 2px
 }
 
+.main-cart a {
+  text-decoration: none;
+}
+
 .cart-item {
   display: inline-block;
   vertical-align: top;
