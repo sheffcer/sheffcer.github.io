@@ -1,9 +1,9 @@
 body {
   background-image: url("../img/background_960px.jpg"); 
   background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: scroll;
-  overflow-x: hidden; 
+   background-position: center top;
+   background-attachment: scroll;
+/*   overflow-x: hidden; */
   }
   
   .container {
