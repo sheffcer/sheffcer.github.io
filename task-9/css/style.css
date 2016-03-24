@@ -1,29 +1,28 @@
 
-body {
-  padding: 0;
-  margin: 0;
-  background-image: url("../img/background_768px.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: scroll;
-}
+  body {
+    padding: 0;
+    margin: 0;
+    background-image: url("../img/background_768px.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: scroll;
+  }
 
-@font-face {
- font-family: "LeagueGothicRegular";
- src: url("../fonts/LeagueGothicRegular.eot");
- src: url("../fonts/LeagueGothicRegular.eot?#iefix")format("embedded-opentype"),
- url("../fonts/LeagueGothicRegular.woff") format("woff"),
- url("../fonts/LeagueGothicRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
+  @font-face {
+   font-family: "LeagueGothicRegular";
+   src: url("../fonts/LeagueGothicRegular.eot");
+   src: url("../fonts/LeagueGothicRegular.eot?#iefix")format("embedded-opentype"),
+   url("../fonts/LeagueGothicRegular.woff") format("woff"),
+   url("../fonts/LeagueGothicRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
 
 
 /*========================320px============================*/
 
 
-
-  .container {
+.container {
     width: 320px;
     margin: 0 auto;
   }
@@ -135,6 +134,7 @@ body {
 
 
 
+/*
 .mobile-menu {
     position: relative;
     width: 246px;
@@ -152,7 +152,7 @@ body {
   
 .mobile-sub-menu__list {
     position: absolute;
-/*    width: 246px;*/
+    width: 246px;
     background-image: url("../img/mobile-menu.png");
     height: 210px;
     background-repeat: no-repeat;
@@ -230,6 +230,7 @@ body {
   height: 2px;
   background: #edbfff;
 }
+*/
   
 .main-slider {
   width: 320px;

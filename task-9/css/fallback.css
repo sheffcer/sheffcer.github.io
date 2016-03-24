@@ -25,17 +25,27 @@ body {
   margin-bottom: 25px;
 }
   
-.menu {
+.menu__inner {
   float: left;
   display: block;
-  margin-top: 70px;
-  margin-left: 165px;
-  margin-bottom: 72px;
+  margin-top: -70px;
+  margin-left: 250px;
+  margin-bottom: 0;
 }
   
 .dropdown-menu {
     display: none;
   }
+
+.dropdown-menu__inner {
+  display: none;
+}
+
+.menu {
+  float: left;
+  margin-top: 50px;
+  margin-left: 50px;
+}
 
 .menu__list {
   margin: 0;
@@ -45,16 +55,19 @@ body {
 }
 
 .menu__item {
-  display: inline-block;
-  vertical-align: top;
+/*  display: inline-block;*/
+/*  vertical-align: top;*/
+  float: left;
   margin-right: 40px;
 }
 
+/*
 .menu__item:last-child {
   display: inline-block;
   vertical-align: top;
   margin-right: 0;
 }
+*/
 
 .menu__link  {
   display: block;
@@ -109,17 +122,19 @@ body {
   background: #edbfff;
 }
 
+/*
 .slider-opacity {
   background-color: rgba(0, 0, 0, 0.15);
   height: 400px;
   margin-top: 132px;
   margin-bottom: 230px;
 }
+*/
 
 .main-slider {
   width: 768px;
   position: relative;
- }
+}
 
 .main-slider__left-button {
   position: absolute;
@@ -256,7 +271,7 @@ body {
 .about__item {
   position: relative;
   float: left;
-  margin-right: 70px;
+  margin-right: 50px;
   margin-left: 0;
   padding-left: 50px;
   width: 220px;
@@ -501,7 +516,7 @@ body {
   margin-bottom: 130px;
   width: 775px;
   height: 65px;
-margin-left: 90px;
+  margin-left: 90px;
   background: url("/img/logos-960.png");
   background-repeat: no-repeat;
   background-position: 0 0;
