@@ -6,6 +6,16 @@ body {
 /*   overflow-x: hidden; */
   }
   
+  @font-face {
+   font-family: "LeagueGothicRegular";
+   src: url("../fonts/LeagueGothicRegular.eot");
+   src: url("../fonts/LeagueGothicRegular.eot?#iefix")format("embedded-opentype"),
+   url("../fonts/LeagueGothicRegular.woff") format("woff"),
+   url("../fonts/LeagueGothicRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+
   .container {
  width: 960px;
  margin: 0 auto;
