@@ -8,7 +8,7 @@ body {
   
   @font-face {
    font-family: "LeagueGothicRegular";
-   src: url("../fonts/LeagueGothicRegular.eot");
+   src: url("../fonts/LeagueGothicRegular.eot#");
    src: url("../fonts/LeagueGothicRegular.eot?#iefix")format("embedded-opentype"),
    url("../fonts/LeagueGothicRegular.woff") format("woff"),
    url("../fonts/LeagueGothicRegular.ttf") format("truetype");
