@@ -15,3 +15,29 @@ if ( n <= 0 ) {
 } else {
   console.log(pow(x, n));
 }
+
+
+var userArray = [];
+
+function getUser() {
+  for (var i =0; i < 3; i++) {
+  userArray[i] = prompt('Введите пользователя №'+(i+1), '');
+ }
+console.log(userArray);
+}
+
+getUser();
+
+function checkUser () {
+ var  newUser=prompt('Введите имя пользователя', '');
+ for ( var i = 0; i < userArray.length; i++) {
+  if ( userArray[i] === newUser ) {
+   alert(userArray[i] +', Вы удачно вошли!');
+    break;
+  } else {
+    alert('Гудбай');
+    break;
+  }
+ }
+}
+checkUser();
