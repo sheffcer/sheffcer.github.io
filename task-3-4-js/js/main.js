@@ -1,15 +1,5 @@
-var myForm = {
-  createBody: document.body,
-  createForm: document.createElement('form'),
-  createTitle: document.createElement('h2'),
-  createBtn: document.createElement(button),
-  
-  test: function () {
-    this.createForm.classList.add('navbar-form');
-    
-    this.createBody.appendChild(this.createForm);
-    this.createForm.appendChild(this.createTitle);
-  }
-}
-
-myForm.test();
+var form = document.createElement('form');
+form.classList.add('navbar-form');
+var parentElem = document.body;
+//parentElem.insertBefore(form, parentElem.children[0]);
+parentElem.appendChild(form);
