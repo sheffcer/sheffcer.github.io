@@ -9,10 +9,10 @@ var answerThree = 'Вариант ответа №3';
 var questionOne = '1. Вопрос №1';
 var questionTwo = '2. Вопрос №2';
 var questionThree = '3. Вопрос №3';
+var Button = 'Проверить мои результаты';
 
 var testForm =  {
   Title: function() {
-    var name = 'Тест по программированию';
     var pageTitle = document.createElement('h2'); 
     pageTitle.classList.add('text-center');
     pageTitle.innerHTML = name ;
@@ -22,7 +22,7 @@ var testForm =  {
   Question: function() {
     var  h4 = document.createElement('h4');
     h4.innerHTML = questionOne;
-    form.appendChild(h4)
+    form.appendChild(h4);
     testForm.Answers(answerOne)
   },
   
@@ -76,6 +76,14 @@ var testForm =  {
     label.innerHTML  = answerThree;
     label.setAttribute('for', 'number2');
     fieldset.appendChild(label);
+  },
+  
+  Button: function() {
+    var input = document.createElement('input');
+    input.setAttribute('type', 'submit');
+    input.setAttribute('value', 'Проверить мои результаты' );
+    input.classList.add('btn', 'btn-info', 'btn-lg');
+    form.appendChild(input)
   }
 }
 
@@ -83,3 +91,4 @@ testForm.Title();
 testForm.Question();
 testForm.Question2();
 testForm.Question3();
+testForm.Button();
