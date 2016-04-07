@@ -3,6 +3,7 @@ form.classList.add('navbar-form');
 var parentElem = document.body;
 //parentElem.insertBefore(form, parentElem.children[0]);
 parentElem.appendChild(form);
+var name = 'Тест по программированию'
 var answerOne = 'Вариант ответа №1';
 var answerTwo = 'Вариант ответа №2';
 var answerThree = 'Вариант ответа №3';
@@ -13,10 +14,10 @@ var Button = 'Проверить мои результаты';
 
 var testForm =  {
   Title: function() {
-    var pageTitle = document.createElement('h2'); 
-    pageTitle.classList.add('text-center');
-    pageTitle.innerHTML = name ;
-    form.insertBefore(pageTitle, form.children[0]);
+    var h2 = document.createElement('h2'); 
+    h2.classList.add('text-center');
+    h2.innerHTML = name ;
+    form.insertBefore(h2, form.children[0]);
   },
   
   Question: function() {
