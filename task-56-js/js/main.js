@@ -29,7 +29,7 @@ function increment() {
       var tenth = time % 10;
       
       if (mins <10){
-        mins = '0' + sec
+        mins = '0' + mins;
       }
       document. getElementById('output').innerHTML = hours + ":" + mins + ":" + sec + ":" + tenth;
       increment();
