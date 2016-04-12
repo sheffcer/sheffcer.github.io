@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+}
+
+.wrapper {
+  width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px;
+}

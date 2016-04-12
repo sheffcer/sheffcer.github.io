@@ -16,7 +16,7 @@ function reset() {
   time = 0;
   running = 0;
   document.getElementById("startPause").innerHTML = "Start";
-  document.getElementById("output").innerHTML = "00:00:00";
+  document.getElementById("output").innerHTML = "0:00:00:00";
 }
 
 function increment() {
@@ -24,14 +24,18 @@ function increment() {
     setTimeout(function(){
       time++;
       var mins = Math.floor(time/10/60);
-      var sec = Math.floor(time/10 % 60);
+      var sec = Math.floor(time/10);
       var hours = Math.floor(time/10/60/60);
       var tenth = time % 10;
       
       if (mins <10){
         mins = '0' + mins;
       }
-      document. getElementById('output').innerHTML = hours + ":" + mins + ":" + sec + ":" + tenth;
+      
+      if (sec < 10) {
+        sec = "0" + sec;
+      }
+      document. getElementById('output').innerHTML = hours + ":" + mins + ":" + sec + ":" + "0" + tenth;
       increment();
       
     }, 100)
