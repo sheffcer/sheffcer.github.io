@@ -13,8 +13,6 @@ body {
 .tabs-menu {
   height: 30px;
   font-size: 0;
-  clear: both;
- 
 }
 
 .tabs-menu__item {
@@ -35,6 +33,7 @@ body {
   position: relative;
   background-color: #fff;
   border-bottom: 1px solid #fff;
+  text-decoration: none;
   z-index: 5;
 }
 
@@ -45,8 +44,17 @@ body {
   text-decoration: none; 
 }
 
+.tabs-menu__link:hover {
+  text-decoration: none; 
+}
+
 .active a {
   color: #2e7da3;
+  text-decoration: none;
+}
+
+.active a:hover {
+  text-decoration: none;
 }
 
 .tab {
