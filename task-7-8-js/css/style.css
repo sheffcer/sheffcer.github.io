@@ -10,14 +10,6 @@ body {
   margin: 0 auto;
 }
 
-.tab {
-  border: 1px solid #d4d4d1;
-  background-color: #fff;
-  margin-top: -10px;
-  margin-bottom: 20px;
-  width: auto;
-}
-
 .tabs-menu {
   height: 30px;
   font-size: 0;
@@ -36,7 +28,6 @@ body {
   border-top: 1px solid #d4d4d1;
   border-right: 1px solid #d4d4d1;
   border-left: 1px solid #d4d4d1;
-  border-bottom: #fff;
 }
 
 .active {
@@ -64,7 +55,13 @@ body {
   color: #2e7da3;
 }
 
-
+.tab {
+  border: 1px solid #d4d4d1;
+  background-color: #fff;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  width: auto;
+}
 
 .tab__content {
   width: 660px;
