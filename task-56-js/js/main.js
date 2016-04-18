@@ -99,6 +99,6 @@ that.out.innerHTML = sTime;
 };
 
 
-timer.start();
+timer.start();*/
 
 
