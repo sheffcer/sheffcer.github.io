@@ -25,3 +25,7 @@ $(document).ready(function() {
         $(this).parent().siblings().removeClass("active");
         //берем аттрибут ссылки href и записываем в переменную tab - там будет значение, например #tab-1
         var tab = $(this).attr("href"); */
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
