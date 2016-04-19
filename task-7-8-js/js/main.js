@@ -26,6 +26,75 @@ $(document).ready(function() {
         //берем аттрибут ссылки href и записываем в переменную tab - там будет значение, например #tab-1
         var tab = $(this).attr("href"); */
 
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
+//$(document).ready(function(){
+var $firstName = $('#Firstname');
+var $lastName = $('#Lastname');
+var $adress = $('#Adress');
+var $button = $('.btn-primary');
+
+//  $("input").css("background-color", "lightgrey");
+////    $('[data-toggle="tooltip"]').tooltip(); 
+//
+
+$firstName.hover(function(){
+  $('.tooltips--visible1').css({
+    opacity: 1,
+    visibility:'visible',
+    display: 'block'
+ })}, 
+  function() {$('.tooltips--visible1').css({
+    opacity: 0,
+    visibility:'hidden'
+ })
 });
+  
+$lastName.hover(function(){
+  $('.tooltips--visible2').css({
+    opacity: 1,
+    visibility:'visible',
+    display: 'block'
+ })}, 
+  function() {$('.tooltips--visible2').css({
+    opacity: 0,
+    visibility:'hidden'
+ })
+});
+  
+$adress.hover(function(){
+  $('.tooltips--visible3').css({
+    opacity: 1,
+    visibility:'visible',
+    display: 'block'
+ })}, 
+  function() {$('.tooltips--visible3').css({
+    opacity: 0,
+    visibility:'hidden'
+ })
+});
+
+  $button.click(function(){
+	 $('.tooltips--visible1').css({
+    opacity: 1,
+    visibility:'visible',
+    display: 'block',
+    });
+	 $('.tooltips--visible2').css({
+    opacity: 1,
+    visibility:'visible',
+    display: 'block',
+    });
+	 $('.tooltips--visible3').css({
+    opacity: 1,
+    visibility:'visible',
+    display: 'block',
+    });
+  });
+//$button.click(function(){
+//	$('.tooltips--visible1').css({
+//         opacity: 1,
+//         visibility:'visible',
+//         display: 'block'
+//    });
+// });
+
+//});
