@@ -1,25 +1,29 @@
-@import '//fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic';
-
 body {
-    background: #F0EFE7;
-    margin: 0;
-    padding: 0;
-    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #4E443C;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+/*    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+/*  font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   text-align: center;
   font-weight: normal;
   text-rendering: optimizelegibility;
 }
 
 h1 {
-    color: #4E443C;
-    font-size: 36px;
-    font-weight: bold;
+  color: #4E443C;
+  font-size: 36px;
+  font-weight: bold;
+  text-align:center;
 }
 
 h2, h2 a {
@@ -47,3 +51,74 @@ pre {
     padding: 0 20px 40px 20px;
     margin: auto;
 }
+
+.attraction__inner {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.attraction {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 28px;
+}
+.attraction__title {
+  color: #000000;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 20px;
+  margin-bottom: 25px;
+  margin-top: 0px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+}
+.attraction__item {
+  text-align: left;
+  margin-bottom: 23px;
+}
+.attraction__item:last-of-type {
+  margin-bottom: 0px;
+}
+.attraction input[type="checkbox"] {
+  display: none;
+}
+.attraction label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  text-transform: initial;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'PT Sans', sans-serif;
+  border-style: none;
+  text-transform: lowercase;
+}
+.attraction label::before {
+  display: inline-block;
+  content: '';
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 15px solid #f2f2f2;
+  background: #f2f2f2;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.attraction #devil-bridge:checked + label[for="devil-bridge"]::before {
+  background: #f2f2f2 url('../img/checkbox.png') no-repeat;
+  vertical-align: middle;
+}
+.attraction #slide-park:checked + label[for="slide-park"]::before {
+  background: #f2f2f2 url('../img/checkbox.png') no-repeat;
+  vertical-align: middle;
+}
+.attraction #bell-mountain:checked + label[for="bell-mountain"]::before {
+  background: #f2f2f2 url('../img/checkbox.png') no-repeat;
+  vertical-align: middle;
+}
+.attraction #red-rocks:checked + label[for="red-rocks"]::before {
+  background: #f2f2f2 url('../img/checkbox.png') no-repeat;
+  vertical-align: middle;
