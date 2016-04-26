@@ -8,6 +8,7 @@
   <title>Carousel</title>
 </head>
 <body>
+<!--
  <div class="wrapper">
   <h1>Carousel using CSS3 Transitions</h1>
    <p>This example shows how to setup a carousel using CSS3 transitions for animations.</p>
@@ -25,7 +26,7 @@
       </ul>
      </div>
 
-<!--     <p class="photo-credits">Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a></p>-->
+     <p class="photo-credits">Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a></p>
       <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
       <a href="#" class="jcarousel-control-next">&rsaquo;</a>
     </div>
@@ -53,6 +54,7 @@
         </div>
       </div>
     </section>
+-->
 <!--
     <section class="attraction">
       <div class="attraction__inner">
@@ -76,11 +78,16 @@
       </div>
     </section>        
 -->
-   <script src="https://code.jquery.com/jquery-git.js"></script>
+  <section class="attraction__inner">
+   <h2 class="attraction_title">Чекбоксы</h2>
+	<p><input type="checkbox" name="test_check1" id="check"> <label for="check">Не отмеченный чекбокс</label></p>
+	<p><label class="attraction__item"><input type="checkbox" name="test_check2" checked="checked"> Отмеченный чекбокс</label></p>
+  </section>
+  <script src="https://code.jquery.com/jquery-git.js"></script>
   <script type="text/javascript" src="./js/modernizr.js"></script>
   <script type="text/javascript" src="./js/jquery.jcarousel.js"></script>
   <script type="text/javascript" src="./js/jcarousel.transitions.js"></script>
-<!--  <script type="text/javascript" src="./js/jquery.checkbox.js"></script>	-->
+  <script type="text/javascript" src="./js/jquery.checkbox.js"></script>	
 <!--	<script src="https://code.jquery.com/jquery-git.js"></script>-->
 <!--	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>-->
 <!--	<script src="js/jquery.fancybox.pack.js"></script>-->
