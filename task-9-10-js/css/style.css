@@ -173,7 +173,7 @@ pre {
 #menu ul li a {
 	text-transform: uppercase;
 	text-decoration: none;
-	color: lightgrey;
+	color: #ffffff;
   text-align: center;
 }
 
@@ -193,6 +193,7 @@ pre {
 
 #menu ul ul {
   position: absolute;
+  display: none;
   left: -10px;
     background: rgb(255,100,100);
   width: 100px;
