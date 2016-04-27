@@ -138,3 +138,62 @@ pre {
 .custom_checkbox input {
 	display: none;
 }
+
+
+/*************jQuery menu*********/
+
+
+#container {
+	width: 700px;
+	margin: 20px auto;
+	border: 1px solid #ccc;
+}
+
+#header {
+	height: 88px;
+	padding-top: 33px;
+}
+
+#menu {
+	height: 46px;
+	width: 100%;
+	background: rgb(255,100,100);
+}
+
+#menu ul li {
+	position: relative;
+  list-style: none;
+  float: left;
+	padding-left:25px;
+  padding-right:25px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+#menu ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: lightgrey;
+  text-align: center;
+}
+
+#menu ul li a:hover {
+	text-decoration: underline;
+}
+
+#content {
+	padding: 20px 35px;
+	background: #fff;
+}
+		
+#menu ul ul li {
+  float: none;
+  margin-left: -30px;
+}
+
+#menu ul ul {
+  position: absolute;
+  left: -10px;
+    background: rgb(255,100,100);
+  width: 100px;
+}
