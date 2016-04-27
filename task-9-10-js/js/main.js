@@ -1,3 +1,7 @@
 $(document).ready(function() {
-		$(".fancybox").fancybox();
-	});
+	 $(".fancybox").fancybox();
+});
+
+$(document).ready(function() {
+  $("select").selecter();
+});

@@ -5,6 +5,7 @@
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/jcarousel.transitions.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fs.selecter.css">
   <title>Carousel</title>
 </head>
 <body>
@@ -76,6 +77,19 @@
       </div>
     </section>        
 -->
+  	<section class="attraction__inner">
+  	<h2 class="attraction__title">Select jQuery</h2>
+				<div class="row">
+					<select name="num">
+						<option value="1">Первый</option>
+						<option value="2">Второй</option>
+						<option value="3">Третий</option>
+						<option value="4" disabled="disabled">Четвертый</option>
+						<option value="5">Пятый</option>
+					</select>
+				</div>
+				<input type="submit" name="submit" value="Отправить" />
+			</section>
    <script src="https://code.jquery.com/jquery-git.js"></script>
   <script type="text/javascript" src="./js/modernizr.js"></script>
   <script type="text/javascript" src="./js/jquery.jcarousel.js"></script>
@@ -84,6 +98,7 @@
 <!--	<script src="https://code.jquery.com/jquery-git.js"></script>-->
 <!--	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>-->
 <!--	<script src="js/jquery.fancybox.pack.js"></script>-->
-	<script src="js/main.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/jquery.fs.selecter.min.js"></script>
 	</body>
 </html>
