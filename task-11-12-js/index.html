@@ -7,9 +7,10 @@
   <title>Document</title>
 </head>
 <body>
-<div class="container">
+<div class="container clearfix">
  <div class="carousel-arrow-left"><span>Влево</span></div>
  <div class="carousel-hider">
+  <h2>Module11-12-task1</h2>
    <ul class="carousel-list">
     <li class="carousel-element"><img src="img/1_b.jpg"><p>Описание 1</p></li>
     <li class="carousel-element"><img src="img/2_b.jpg"><p>Описание 2</p></li>
@@ -23,7 +24,20 @@
   </div>
   <div class="carousel-arrow-right"><span>Вправо</span></div>
  </div>
+ <div class="container clearfix">
+  <h2>Module11-12-task2</h2>
+ </div>
  <script src="https://code.jquery.com/jquery-git.js"></script>
- <script src="./js/jquery.slider.js"></script>
+ <script src="js/jquery.slider.js"></script>
+ <script src="js/tmpl.js"></script>
+ <script src="js/main.js"></script>
+ <script type="text/template" id="test">
+  <% for (var i = 0; i < data.length; i++) { %>
+    <div class="container">
+      <h1><%= data[i].title %></h1>
+      <p><%= data[i].content %></p>
+    </div>
+     <% }; %>
+ </script>
 </body>
 </html>
