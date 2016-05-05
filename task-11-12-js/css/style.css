@@ -3,14 +3,26 @@ body {
   padding: 0;
 }
 
-h2 {
+h1, h2 {
   text-align: center;
 }
 
 .container {
   width: 800px;
   margin: 0 auto;
-  text-align: center
+}
+
+.main-wrapper {
+  width: 600px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  padding: 30px 50px;
+}
+
+.contact-photo {
+  display: block;
+  width: 145px;
+  margin: 0 auto;
 }
 
 .clearfix:after {

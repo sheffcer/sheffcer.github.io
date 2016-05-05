@@ -31,6 +31,7 @@
  <script src="js/jquery.slider.js"></script>
  <script src="js/tmpl.js"></script>
  <script src="js/main.js"></script>
+<!--
  <script type="text/template" id="test">
   <% for (var i = 0; i < data.length; i++) { %>
     <div class="container">
@@ -38,6 +39,24 @@
       <p><%= data[i].content %></p>
     </div>
      <% }; %>
+ </script>
+-->
+  <script type="text/template" id="test">
+  <div class="container">
+   <div class="main-wrapper">
+    <h1><%= data[0].title %></h1>
+    <img class="contact-photo" src="<%= data[0].content %>" alt="me">
+    <% for (var i = 1; i < data.length; i++) { %>
+   	 <h2><%= data[i].title %></h2>
+	   <ul>
+	    <% for (var j = 0; j < data[i].content.length; j++) { %>
+      <li><%= data[i].content[j] %></li>
+      <% }; %>
+	   </ul>
+	    <hr>
+      <% }; %>
+   </div>  
+  </div>
  </script>
 </body>
 </html>
