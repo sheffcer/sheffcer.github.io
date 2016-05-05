@@ -1,5 +1,5 @@
 body {
-  background: #fff;
+  background-color: #fff;
   margin: 0;
   padding: 0;
 /*    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
@@ -7,8 +7,8 @@ body {
   font-size: 14px;
   color: #000000;
 }
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
-}
+    /*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);*/
+/*}*/
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
@@ -30,7 +30,7 @@ h2, h2 a {
 */
 
 h3, h3 a {
-  color: #000000;;
+  color: #000000;
 }
 
 a {
@@ -62,8 +62,8 @@ pre {
 .attraction {
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 28px;
-*/
-}
+/**!*/
+/*}*/
 .attraction__title {
   color: #000000;
   font-size: 18px;
