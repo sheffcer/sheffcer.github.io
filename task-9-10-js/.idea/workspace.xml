@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34ac4b40-9f73-4254-8015-1a3ac4414358" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../task-11-12-js/js/tamplate.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../task-11-12-js/css/style.css" afterPath="$PROJECT_DIR$/../task-11-12-js/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../task-11-12-js/index.html" afterPath="$PROJECT_DIR$/../task-11-12-js/index.html" />
-    </list>
+    <list default="true" id="34ac4b40-9f73-4254-8015-1a3ac4414358" name="Default" comment="" />
     <ignored path="task-9-10-js.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -305,8 +301,8 @@
     <option name="totallyTimeSpent" value="19599000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="975" y="0" width="892" height="1056" extended-state="1" />
-    <editor active="true" />
+    <frame x="975" y="0" width="892" height="1056" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
