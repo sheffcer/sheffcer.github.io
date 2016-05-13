@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility;
 }
 
+h2:hover {
+  cursor: : pointer;
+}
+
 h1 {
   color: #4E443C;
   font-size: 36px;
