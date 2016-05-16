@@ -1,3 +1,5 @@
+// ===========================test 1===============================================
+
 //$(document).ready(function() {
 //	 $(".fancybox").fancybox();
 //});
@@ -23,13 +25,16 @@
 //$("h2").css("color", "red");
 //});
 
+
+
+// ========================== test2 =========================================
 $(function(){
  
 //  $(".fancybox").fancybox();
   
     var $myHover = $('h2').on('mouseover', function(){
      $myHover.css({
-     'color':'red',
+      'color':'red',
       'transition': '2s',
       'font-size':'26px',
       'transition': '2s',
@@ -39,8 +44,8 @@ $(function(){
   
   var $myHover2 = $('h2').on('mouseout', function(){
      $myHover2.css({
-     'color':'black',
-      'transition': '2s',
+      'color':'black',
+      'transition':'2s',
       'font-size':'26px',
       'transition': '2s',
       'font-size':'16px',
@@ -68,5 +73,7 @@ $(function(){
   
 });
 
+
+// ============================ test3 ==================================
 
 

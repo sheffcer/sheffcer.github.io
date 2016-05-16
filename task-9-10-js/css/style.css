@@ -208,3 +208,7 @@ pre {
   left: 130px;
   background: rgb(255,100,100);
 }
+
+.red {
+	color: red;
+}
