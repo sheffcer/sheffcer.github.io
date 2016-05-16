@@ -19,12 +19,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
 $(function(){
 	
-	var $element = $('.wrapper').parent();
-	var $paragraph = $element.find('p');
-	console.log($paragraph);
-	console.log($element);
+	var $element = $('.wrapper');
+	var $link = $element.find('a');
+//	console.log($paragraph);
+//	console.log($element);
 	
-	$paragraph.addClass('red');
+//	$link.addClass('red');
+	$link.css({
+		'background':'lightgrey',
+		'font-size':'18px',
+//		'cursor': 'pointer'
+	});
 	
+	$link.attr('href', 'http://colorway.com/ru_CW');
+	$link.attr('target', '_blank');
+	
+//	var $wrapper = $('.wrapper');
+//	$wrapper.removeClass('wrapper');
 	
 }); 
