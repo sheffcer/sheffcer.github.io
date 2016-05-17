@@ -19,22 +19,46 @@ document.addEventListener('DOMContentLoaded', function() {
 
 $(function(){
 	
-	var $element = $('.wrapper');
-	var $link = $element.find('a');
+//	var $link = $('.wrapper a');
+//	var $link = $element.find('a');
 //	console.log($paragraph);
 //	console.log($element);
 	
 //	$link.addClass('red');
-	$link.css({
-		'background':'lightgrey',
-		'font-size':'18px',
-//		'cursor': 'pointer'
-	});
 	
-	$link.attr('href', 'http://colorway.com/ru_CW');
-	$link.attr('target', '_blank');
 	
 //	var $wrapper = $('.wrapper');
 //	$wrapper.removeClass('wrapper');
+  
+//  $('.wrapper').append('<div>test</test>');
+  $('.wrapper').append('<a>fjdkfjkfjdkfjdkfj</a>');
+  
+	var $link = $('.wrapper a');
+  // Chahining цепочка вызовов
+  $link
+    .css({
+		 'background':'lightgrey',
+		 'font-size':'18px',
+     'padding':'10px;',
+     'margin-top':'20px'
+//		'cursor': 'pointer'
+	})
 	
+	  .attr('href', 'http://colorway.com/ru_CW')
+	  .attr('target', '_blank');
+  
+//  $link.on('click', function(){
+//    alert('мазафака!');
+//  })
+  
+  $link.hover(
+   function() {
+     $(this).hide();
+   },
+  function() {
+//    $(this).show();
+  }
+  )
+  
+  
 }); 
