@@ -44,8 +44,14 @@ var questions = [
     question_title: 'Где живут коты?',
     answer: ['нора', 'трава', 'гнездо'],
     true_answer: [false, false, true]
+  },
+  
+  {
+    question_title: 'Как узнают друг друга зебры?',
+    answer: ['по лицу', 'по гриве', 'по полоскам', 'по запаху'],
+    true_answer: [false, false, true, false]
   }
-]
+];
 
 var JSON_Questions = JSON.stringify(questions); // упаковываем объект в строку
 
