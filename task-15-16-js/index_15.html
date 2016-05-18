@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Media Search </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://pixabay.com/static/css/base24.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+</head>
+<body>
+ <div style="max-width:640px;position:relative;padding:0 20px;margin:16px auto 124px">
+  <form id="search-form" class="media_search search_xl" action="https://api.riffsy.com/v1/search" method="get">
+   <table>
+    <tbody>
+      <tr>
+       <td>
+       <input type="text" id="id_q" name="q" value="" placeholder="Поиск " data-autofocus=""></td>
+       <td style="width:1%">
+       <input type="submit" value=" "></td>
+      </tr>
+    </tbody>
+   </table>
+  </form>
+ </div>
+
+<!-- GALLERY -->
+
+   <div id="gallery">
+     <div id="gallery-container" class="flex_grid credits"></div>
+  </div>
+
+<!-- END GALLERY -->
+<!-- MAIN APP -->
+
+  <script>
+   $(document).ready(function() {
+            String.prototype.replaceAll = function(search, replace) {
+                return this.split(search).join(replace);
+            }
+
+
+            function view(template, variables) {
+                for (var i = 0; i < variables.length; i++) {
+                    template = template.replaceAll(variables[i].key, variables[i].val);
+
+                }
+
+                return template;
+            }
+
+            function render(html) {
+                $('#gallery-container').html(html);
+            }
+
+
+            $("#search-form").on('submit', function(e) { // создаём обработчик события
+                e.preventDefault(); // перехватываем стандартное событие и не выполняем его
+
+                render('');
+
+                var url = $(this).attr('action');
+
+                var search = $('#id_q').val();
+
+                var data = {
+                    tag: search,
+                    limit: 10
+                };
+
+
+                $.ajax({
+                        url: url,
+                        method: 'get',
+                        data: data
+                    })
+                    .done(function(response) {
+
+                        var template = '<div class="item" style="width:{w}px;height:{h}px;display: block;"><a href="{link}"><img src="{url}"></a><div><a href="{link}">{title}</a></div></div>';
+                        var outHtml = '';
+
+                        if (response.results) {
+                            $(response.results).each(function() {
+
+
+
+                                var item = $(this).get(0);
+
+
+
+
+                                var media = $(item.media).get(0);
+
+
+                                if (media.gif) {
+
+
+                                    var params = [{
+                                            key: '{w}',
+                                            val: media.gif.dims[0]
+                                        }, {
+                                            key: '{h}',
+                                            val: media.gif.dims[1]
+                                        }, {
+                                            key: '{link}',
+                                            val: item.itemurl
+                                        }, {
+                                            key: '{url}',
+                                            val: media.gif.url
+                                        }, {
+                                            key: '{title}',
+                                            val: item.title
+                                        },
+
+
+                                    ];
+
+                                    outHtml += view(template, params);
+
+
+                                }
+
+
+
+
+                            });
+
+
+                            render(outHtml);
+
+
+                        } else {
+                            render('no data');
+                        }
+
+
+
+
+                    })
+                    .fail(function(jqXHR, textStatus) {
+                        render("Request failed: " + textStatus);
+                    });
+
+
+
+
+            });
+
+
+        });
+    </script>
+
+<!-- MAIN APP -->
+
+</body>
+
+</html>

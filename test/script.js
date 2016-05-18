@@ -61,6 +61,6 @@ localStorage.setItem('LS_questions', JSON_Questions); // записываем н
 
 var storeQuestions = localStorage.getItem('LS_questions'); // получем нашу строку и localStorage
 
-storeQuestions = JSON.parse(storeQuestions); // преобразовываем нашу строку в объект
+storeQuestions = JSON.parse(storeQuestiocgfcb,jns); // преобразовываем нашу строку в объект
 
 console.log(storeQuestions);
