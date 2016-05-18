@@ -1,0 +1,214 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+/*    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+    /*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);*/
+/*}*/
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+}
+
+h2:hover {
+  cursor: : pointer;
+}
+
+h1 {
+  color: #4E443C;
+  font-size: 36px;
+  font-weight: bold;
+  text-align:center;
+}
+
+/*
+h2, h2 a {
+    color: #F14E32;
+}
+*/
+
+h3, h3 a {
+  color: #000000;
+}
+
+a {
+  color: #0388A6;
+}
+
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+.wrapper {
+    max-width: 620px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}
+
+.attraction__inner {
+  width: 320px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 28px;
+}
+
+/*
+.attraction {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 28px;
+/**!*/
+/*}*/
+.attraction__title {
+  color: #000000;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 20px;
+  margin-bottom: 25px;
+  margin-top: 0px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+}
+.attraction__item {
+  text-align: left;
+  margin-bottom: 23px;
+}
+.attraction__item:last-of-type {
+  margin-bottom: 0px;
+}
+.attraction input[type="checkbox"] {
+  display: none;
+}
+.attraction label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  text-transform: initial;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'PT Sans', sans-serif;
+  border-style: none;
+  text-transform: lowercase;
+}
+.attraction label::before {
+  display: inline-block;
+  content: '';
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 15px solid #f2f2f2;
+  background: #f2f2f2;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.attraction #devil-bridge:checked + label[for="devil-bridge"]::before {
+  background: #f2f2f2 url('../img/checkbox.png') no-repeat;
+  vertical-align: middle;
+}
+.attraction #slide-park:checked + label[for="slide-park"]::before {
+  background: #f2f2f2 url('../img/checkbox.png') no-repeat;
+  vertical-align: middle;
+}
+.attraction #bell-mountain:checked + label[for="bell-mountain"]::before {
+  background: #f2f2f2 url('../img/checkbox.png') no-repeat;
+  vertical-align: middle;
+}
+.attraction #red-rocks:checked + label[for="red-rocks"]::before {
+  background: #f2f2f2 url('../img/checkbox.png') no-repeat;
+  vertical-align: middle;
+}
+
+.custom_checkbox {
+  display: inline-block;
+  cursor: pointer;
+  background: url(../img/spritesheet.png) no-repeat;
+  background-position: -1px -1px;
+}
+
+
+.custom_checkbox input {
+	display: none;
+}
+
+
+/*************jQuery menu*********/
+
+
+#container {
+	width: 700px;
+	margin: 20px auto;
+	border: 1px solid #ccc;
+}
+
+#header {
+	height: 88px;
+	padding-top: 33px;
+}
+
+#menu {
+	height: 46px;
+	width: 100%;
+	background: rgb(255,100,100);
+}
+
+#menu ul li {
+	position: relative;
+  list-style: none;
+  float: left;
+	padding-left:25px;
+  padding-right:25px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+#menu ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;
+  text-align: center;
+}
+
+#menu ul li a:hover {
+	text-decoration: underline;
+}
+
+#content {
+	padding: 20px 35px;
+	background: #fff;
+}
+		
+#menu ul ul li {
+  float: none;
+  margin-left: -30px;
+}
+
+#menu ul ul {
+  position: absolute;
+  display: none;
+  left: -10px;
+  background: rgb(255,100,100);
+  width: 100px;
+}
+
+#menu ul ul ul {
+  position: absolute;
+  left: 130px;
+  background: rgb(255,100,100);
+}
+
+.red {
+	color: red;
+}
