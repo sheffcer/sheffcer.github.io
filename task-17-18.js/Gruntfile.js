@@ -1,11 +1,7 @@
-'use strict';
+"use strict";
 
 module.exports = function(grunt) {
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks("grunt-postcss");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-browser-sync");
-
+  require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
     less: {
@@ -15,6 +11,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
     postcss: {
       options: {
         processors: [
@@ -31,6 +28,7 @@ module.exports = function(grunt) {
         src: "css/*.css"
       }
     },
+
     browserSync: {
       server: {
         bsFiles: {
@@ -48,6 +46,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
     watch: {
       files: ["less/**/*.less"],
       tasks: ["less", "postcss"],
@@ -55,8 +54,6 @@ module.exports = function(grunt) {
         spawn: false
       }
     }
-  });
-
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
