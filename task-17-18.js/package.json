@@ -1,17 +1,17 @@
 {
-  "name": "107217-sedona",
+  "name": "task-17-18-js",
   "version": "0.1.0",
   "private": true,
-  "description": "Личный проект «Седона» от HTML Academy",
+  "description": "Cтраница о нас",
   "author": "Александр Шевко",
   "repository": {
     "type": "git",
-    "url": "git@github.com:htmlacademy-adaptive/107217-sedona.git"
+    "url": "https://github.com/sheffcer/sheffcer.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/htmlacademy-adaptive/107217-sedona/issues"
+    "url": "https://github.com/sheffcer/sheffcer.github.io/issues"
   },
-  "homepage": "https://github.com/htmlacademy-adaptive/107217-sedona",
+  "homepage": "hhttps://github.com/sheffcer/sheffcer.github.io",
   "devDependencies": {
     "autoprefixer": "6.3.3",
     "editorconfig-tools": "0.1.1",
