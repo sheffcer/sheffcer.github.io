@@ -1,10 +1,27 @@
 body {
   margin: 0;
   padding: 0;
-  
+  font-family: 'tahoma', sans-serif;
 }
 
-
-h2 {
-  color:red;
+.wrapper {
+  width: 772px;
+  margin: 0 auto;
+  outline: 1px dotted green;
 }
+
+.container {
+  width: 772px;
+//  margin: 0 auto;
+  .clearfix();
+}
+
+@import "mixins.less";
+@import "blocks/page-header.less";
+@import "blocks/clocks.less";
+@import "blocks/map.less";
+@import "blocks/icon.less";
+@import "blocks/features.less";
+@import "blocks/goods.less";
+@import "blocks/article.less";
+@import "blocks/page-footer.less";
