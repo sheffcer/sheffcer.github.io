@@ -5,7 +5,7 @@
   "description": "Cтраница о нас",
   "author": "Александр Шевко",
   "repository": {
-    "type": "git",
+    "type": "http",
     "url": "https://github.com/sheffcer/sheffcer.github.io.git"
   },
   "bugs": {
@@ -19,6 +19,7 @@
     "grunt-browser-sync": "2.2.0",
     "grunt-contrib-less": "1.2.0",
     "grunt-contrib-watch": "0.6.1",
+    "grunt-csso": "^1.0.0",
     "grunt-postcss": "0.7.2",
     "load-grunt-tasks": "^3.4.1"
   },
