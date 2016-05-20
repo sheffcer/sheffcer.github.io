@@ -54,8 +54,21 @@ module.exports = function(grunt) {
       options: {
         spawn: false
       }
-    }
+    },
+
+    csso: {
+      style : {
+        options: {
+          report: "gzip"
+        },
+        files: {
+          "css/style.min.css": ["css/style.css"]
+        }
+      }
+    },
+
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask("csso");
 };
