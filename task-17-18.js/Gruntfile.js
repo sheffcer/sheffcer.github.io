@@ -70,5 +70,4 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
-  grunt.registerTask("csso");
 };
