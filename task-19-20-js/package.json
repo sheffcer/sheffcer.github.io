@@ -1,0 +1,34 @@
+{
+  "name": "task-19-20-js",
+  "version": "0.1.0",
+  "private": true,
+  "description": "test",
+  "author": "Александр Шевко",
+  "repository": {
+    "type": "http",
+    "url": "https://github.com/sheffcer/sheffcer.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sheffcer/sheffcer.github.io/issues"
+  },
+  "homepage": "hhttps://github.com/sheffcer/sheffcer.github.io",
+  "devDependencies": {
+    "autoprefixer": "6.3.3",
+    "editorconfig-tools": "0.1.1",
+    "grunt": "0.4.5",
+    "grunt-browser-sync": "2.2.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-csso": "^1.0.0",
+    "grunt-postcss": "0.7.2",
+    "load-grunt-tasks": "^3.4.1"
+  },
+  "scripts": {
+    "test": "editorconfig-tools check *",
+    "build": "grunt sass && grunt postcss",
+    "start": "npm run build && grunt serve"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}

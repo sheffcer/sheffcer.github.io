@@ -1,0 +1,26 @@
+
+@import "mixins.scss";
+@import "blocks/main-header.scss";
+@import "blocks/icon.scss";
+@import "blocks/features.scss";
+@import "blocks/main-footer.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'tahoma', sans-serif;
+}
+
+.wrapper {
+  width: 772px;
+  margin: 0 auto;
+  outline: 1px dotted green;
+  @include clearfix;
+}
+
+.container {
+  width: 772px;
+//  margin: 0 auto;
+  @include clearfix;
+}
+
