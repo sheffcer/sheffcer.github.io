@@ -67,12 +67,31 @@ module.exports = function(grunt) {
       }
     },
 
+    concat: {
+     options: {
+      separator: ';',
+    },
+     dist: {
+      src: ['js/test1.js', 'js/test2.js'],
+      dest: 'build/main.js',
+     }
+    },
+
+    uglify: {
+      dist: {
+        src: ['build/main.js'],
+        dest: 'build/main.min.js'
+      }
+    }
+
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
   grunt.registerTask("build", [
     "less",
     "postcss",
-    "csso"
+    "csso",
+    "concat",
+    "uglify"
   ]);
 };
