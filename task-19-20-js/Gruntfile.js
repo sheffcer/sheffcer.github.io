@@ -50,8 +50,8 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ["scss/**/*.scss"],
-      tasks: ["scss", "postcss"],
+      files: ["sass/**/*.scss"],
+      tasks: ["sass", "postcss"],
       options: {
         spawn: false
       }
