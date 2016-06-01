@@ -90,9 +90,9 @@ module.exports = function(grunt) {
   grunt.registerTask("serve", ["browserSync", "watch"]);
   grunt.registerTask("build", [
     "less",
-    "postcss",
-    "csso",
-    "concat",
-    "uglify"
+    "postcss"
+//    "csso",
+//    "concat",
+//    "uglify"
   ]);
 };

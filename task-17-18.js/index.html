@@ -5,9 +5,10 @@
   <title>About us</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/moment.js"></script>
+  <script src="js/moment-timezone-with-data.min.js"></script>
 </head>
 <body>
- <div class="wrapper">
   <div class="container">
     <div class="page-header">
       <h2 class="page-header__title">
@@ -21,21 +22,32 @@
     <div class="container clearfix">
       <div class="map">
         <div class="map__item">
-          <div class="icon icon--countries "></div>
+          <div class="map__img">
+            <img src="img/countries_icon.png" alt="">
+          </div>
           <div class="map__description">
-            Более 30 стран мира,тысячи партнеров
+            Более 30 стран мира,<br>
+            тысячи партнеров
           </div>
         </div>
-        <div class="map__item">
-          <div class="icon icon--factory "></div>
+        <div class="map__item clearfix">
+          <div class="map__img">
+            <img src="img/Factory_icon.png" alt="">
+          </div>
           <div class="map__description">
-            Производство: Европа,   Тайвань, Китай, ISO 9001:2008
+            Производство: Европа,<br>
+            Тайвань, Китай, ISO 9001:2008
           </div>
         </div>
+
         <div class="map__item">
-          <div class="icon icon--office "></div>
+          <div class="map__img">
+            <img src="img/offices_icon.png" alt="">
+          </div>
           <div class="map__description">
             Наши офисы:
+          </div>
+          </div>
           </div>
         </div>
 <!--
@@ -46,49 +58,98 @@
           <div class="icon icon--location">Honkonhg</div>
         </div>
 -->
-      </div>
-      <div class="clocks">
+    <div class="container">
+        <div class="clocks">
+        <div class="demo-container clocks active bounce">
         <div class="clocks__item">
           <h2 class="clocks__title">США</h2>
-          <div class="icon icon--clocks"></div>
+           <article class="clock station js-kiev">
+
+        <section class="hours-container">
+          <section class="hours"></section>
+        </section>
+        <section class="minutes-container">
+          <section class="minutes"></section>
+        </section>
+        <section class="seconds-container">
+          <section class="seconds"></section>
+        </section>
+  </article>
         </div>
         <div class="clocks__item">
           <h2 class="clocks__title">Европа</h2>
-          <div class="icon icon--clocks"></div>
+          <article class="clock station js-new-york">
+
+        <section class="hours-container">
+          <section class="hours"></section>
+        </section>
+        <section class="minutes-container">
+          <section class="minutes"></section>
+        </section>
+        <section class="seconds-container">
+          <section class="seconds"></section>
+        </section>
+  </article>
         </div>
         <div class="clocks__item">
           <h2 class="clocks__title">Украина</h2>
-          <div class="icon icon--clocks"></div>
+          <article class="clock station js-slovakia">
+
+        <section class="hours-container">
+          <section class="hours"></section>
+        </section>
+        <section class="minutes-container">
+          <section class="minutes"></section>
+        </section>
+        <section class="seconds-container">
+          <section class="seconds"></section>
+        </section>
+  </article>
         </div>
         <div class="clocks__item">
           <h2 class="clocks__title">Гонконг</h2>
-          <div class="icon icon--clocks"></div>
+         <article class="clock station js-hong-kong">
+
+        <section class="hours-container">
+          <section class="hours"></section>
+        </section>
+        <section class="minutes-container">
+          <section class="minutes"></section>
+        </section>
+        <section class="seconds-container">
+          <section class="seconds"></section>
+        </section>
+  </article>
         </div>
+          </div>
       </div>
     </div>
-    <div class="features">
-     <div class="features__item  features__item--red">
+    <div class="container">
+     <div class="features">
+      <div class="features__item  features__item--red">
        <div class="icon icon--store"></div>
        <h2 class="features__description">Более 20 000 торговых точек</h2>
-     </div>
-     <div class="features__item  features__item--orange">
+      </div>
+      <div class="features__item  features__item--orange">
        <div class="icon icon--ebay"></div>
        <h2 class="features__description">Интернет площадки еBay и Amazon</h2>
-     </div>
-     <div class="features__item  features__item--violet">
+      </div>
+      <div class="features__item  features__item--violet">
        <div class="icon icon--stock"></div>
        <h2 class="features__description">Ассортимент - более 2000 позиций</h2>
-     </div>
-     <div class="features__item  features__item--green">
+      </div>
+      <div class="features__item  features__item--green">
        <div class="icon icon--registered"></div>
        <h2 class="features__description">ТМ ColorWay зарегистрирована в 2007 г, защищена в 45 странах</h2>
-     </div>
-     <div class="features__item  features__item--blue">
+      </div>
+      <div class="features__item  features__item--blue">
        <div class="icon icon--people"></div>
        <h2 class="features__description">Доверие миллионов потребителей</h2>
+      </div>
      </div>
     </div>
-    <div class="goods">
+    <div class="container">
+     <div class="goods">
       <div class="goods__main-title">Ассортимент продукции ТМ ColorWay:</div>
       <div class="goods__item">
         <a href="" class="goods__link"></a>
@@ -130,7 +191,9 @@
         <div class="goods__title">Защитные стекла для планшетов и смартфонов</div>
         <div class="goods__img"></div>
       </div>
+     </div>
     </div>
+    <div class="container">
     <div class="article clearfix">
       <div class="article__item">
         <p>Бренд ColorWay бережно относится к бюджету потребителя, его здоровью и  настроению. Поэтому мы предлагаем  решения и продукты для печати высокого качества по оптимальной цене.</p>
@@ -140,13 +203,16 @@
         <p>В сотрудниках мы ценим проявление индивидуальности, стремление к профессиональному развитию с тем, чтобы покорять новые рынки и страны, и получать от работы удовольствие.</p>
         <p>TМ ColorWay - социально ответственный Бренд, поддерживающий спорт, искусство и молодые таланты.</p>
       </div>
+     </div>
     </div>
+    <div class="container">
     <div class="page-footer">
       <p class="page-footer__description">
        Мы живем и работаем с максимальной отдачей - на все 100%!
       </p>
+     </div>
     </div>
-  </div>
-  <script src="js/main.js"></script>
+<!--    <script src="js/main.js"></script>-->
+<script src='js/app.js?v=1'></script>
  </body>
 </html>
