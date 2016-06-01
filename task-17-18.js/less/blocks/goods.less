@@ -1,19 +1,68 @@
 .goods {
-  margin-top: 30px;
+  margin-top: 35px;
   width: 772px;
-  height: 386px;
-  outline: 1px dotted cyan;
+  height: 315px;
+  background-color: #e6e6e6;
+//  outline: 1px dotted cyan;
 
   &__item {
+    display: block;
+    margin-top: 10px;
+    margin-right: 5px;
     display: inline-block;
     vertical-align: top;
-    width: 175px;
+    font-size: 0;
+    width: 170px;
     height: 126px;
-    outline: 1px dotted grey;
+    background: linear-gradient(to bottom, #1e1a1b 2%,#5b595a 52%,#9b999a 100%);
+//    outline: 1px dotted grey;
   }
+
+//  &__item:nth-child(1) {
+//    margin-left: 10px;
+//  }
+
+//  &__item:nth-child(5) {
+//    margin-left: 10px;
+//  }
 
   &__main-title {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #61B211;
+    padding-top: 10px;
+  }
+
+//  &__title {
+//    font-size: 13px;
+//    font-weight: 400;
+//    color: #ffffff;
+//    padding-left: 10px;
+//    padding-top: 10px;
+//
+//  }
+
+  &__link {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+
+  &__link:hover {
+    color: #8ed762;
+  }
+
+  &__wrapper {
+    width: 730px;
+//    margin: 0 auto;
+    margin-left: 30px;
+    margin-top: -15px;
   }
 }
