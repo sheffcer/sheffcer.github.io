@@ -297,7 +297,9 @@ article.clock:hover .seconds-container {
   margin-top: -15px;
 }
 .article {
-  width: 772px;
+  padding-top: 20px;
+  width: 730px;
+  margin: 0 auto;
 }
 .article::after {
   content: "";
@@ -307,13 +309,22 @@ article.clock:hover .seconds-container {
 .article__item {
   float: left;
   width: 356px;
-  outline: 1px dotted blue;
+  margin-left: 9px;
+  font-family: 'tahoma', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
 }
 .page-footer {
+  margin-top: 10px;
   width: 772px;
   height: 49px;
-  outline: 1px dotted red;
+  margin-bottom: 20px;
+  color: #ffffff;
+  background: linear-gradient(to bottom, #7ed13b 0%, #78b519 100%);
 }
 .page-footer__description {
   text-align: center;
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
 }
