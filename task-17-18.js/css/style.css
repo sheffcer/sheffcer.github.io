@@ -260,6 +260,7 @@ article.clock:hover .seconds-container {
   background-color: #e6e6e6;
 }
 .goods__item {
+  position: relative;
   display: block;
   margin-top: 10px;
   margin-right: 5px;
@@ -295,6 +296,14 @@ article.clock:hover .seconds-container {
   width: 730px;
   margin-left: 30px;
   margin-top: -15px;
+}
+.goods__goods__img {
+  display: block;
+}
+.goods__goods__img--1 {
+  position: absolute;
+  top: 25px;
+  left: 25px;
 }
 .article {
   padding-top: 20px;
