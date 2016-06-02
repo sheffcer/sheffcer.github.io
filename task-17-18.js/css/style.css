@@ -75,8 +75,6 @@ article.clock:hover .seconds-container {
   visibility: visible;
 }
 .clock::after {
-  /*background: red;*/
-  /**/
   background: url('../img/vec/clock_center.svg') no-repeat;
   background-size: 100%;
   background-position: 50% 50%;
@@ -126,8 +124,8 @@ article.clock:hover .seconds-container {
 .hours {
   background: #000;
   background: url('../img/vec/hours_arrow.svg') no-repeat;
-  background-position: 50% 0%;
-  background-size: 230%;
+  background-position: 50% 50%;
+  background-size: 250%;
   /*border:1px solid blue;*/
   width: 3.5%;
   height: 40%;
@@ -141,7 +139,6 @@ article.clock:hover .seconds-container {
   background: url('../img/vec/min_arrow.svg') no-repeat;
   background-position: 50% 50%;
   background-size: 165%;
-  /*border:1px solid white;*/
   width: 3.5%;
   height: 55%;
   position: absolute;
