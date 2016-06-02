@@ -205,6 +205,28 @@ article.clock:hover .seconds-container {
   float: left;
   margin-left: 20px;
 }
+.icon {
+  background-image: url("../img/Location_icon.png");
+  position: absolute;
+  width: 25px;
+  height: 33px;
+}
+.icon--usa {
+  left: 890px;
+  top: 175px;
+}
+.icon--europe {
+  left: 1030px;
+  top: 160px;
+}
+.icon--ukraine {
+  left: 1060px;
+  top: 155px;
+}
+.icon--honkong {
+  left: 1201px;
+  top: 203px;
+}
 .features {
   margin-top: 70px;
   width: 772px;
