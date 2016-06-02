@@ -281,6 +281,7 @@ article.clock:hover .seconds-container {
 }
 .goods__link {
   display: block;
+  z-index: 10;
   font-size: 13px;
   font-weight: 400;
   text-decoration: none;
@@ -297,13 +298,43 @@ article.clock:hover .seconds-container {
   margin-left: 30px;
   margin-top: -15px;
 }
-.goods__goods__img {
-  display: block;
-}
-.goods__goods__img--1 {
+.goods__img {
   position: absolute;
-  top: 25px;
+  z-index: 1;
+}
+.goods__img--1 {
+  top: 65px;
   left: 25px;
+}
+.goods__img--2 {
+  top: 25px;
+  left: 80px;
+}
+.goods__img--3 {
+  top: 35px;
+  left: 15px;
+  z-index: 1;
+}
+.goods__img--4 {
+  top: 27px;
+  left: 85px;
+}
+.goods__img--5 {
+  top: 20px;
+  left: 70px;
+}
+.goods__img--6 {
+  top: 15px;
+  left: 70px;
+}
+.goods__img--7 {
+  top: 30px;
+  left: 30px;
+  z-index: 1;
+}
+.goods__img--8 {
+  top: 33px;
+  left: 75px;
 }
 .article {
   padding-top: 20px;
