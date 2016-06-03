@@ -33,30 +33,30 @@
  *  Set up an entry for each locale of clock we want to use
  */
  function getTimes() {
- 
- 
+
+
   // Set the time manually for each of the clock types we're using
   var times = [
     {
       jsclass: 'js-kiev',
       jstime: moment.tz("Europe/Kiev")
     },
-  
+
     {
       jsclass: 'js-new-york',
       jstime: moment.tz("America/New_York")
     },
-    
+
     {
       jsclass: 'js-slovakia',
       jstime: moment.tz('Europe/Bratislava')
     },
-    
+
     {
       jsclass: 'js-hong-kong',
       jstime: moment.tz('Asia/Hong_Kong')
     },
-   
+
 
   ];
   return times;
@@ -73,9 +73,9 @@ function initInternationalClocks() {
     var hoursColor = times[i].jstime.format('H');
     var minutes = times[i].jstime.format('mm');
     var seconds = times[i].jstime.format('ss');
-    
 
-   
+
+
 
     var degrees = [
       {
