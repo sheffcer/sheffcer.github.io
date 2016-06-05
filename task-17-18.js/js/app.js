@@ -26,13 +26,14 @@
     $( ".icon--honkong" ).effect( "bounce", { times: 1 }, "slow" );
   },null);
 
-  $('.features__img').on("mouseenter", function() {
-     $('.features__img').effect( "bounce", { times: 1 }, "slow" );
-  },null);
+//  $('.features__description').on("mouseenter", function() {
+//     $('.features__img').effect( "bounce", { times: 1 }, "slow" );
+//  },null);
 
-  $('.features__title').on("mouseenter", function() {
-     $('.features__description').effect( "bounce", { times: 1 }, "slow" );
-  },null);
+  $('.features__img').click(function() {
+    $(this).addClass("wow");
+    $(this).addClass("rubberBand");
+  });
 
 
 })();
