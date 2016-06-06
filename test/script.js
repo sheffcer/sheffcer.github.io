@@ -47,9 +47,9 @@ var questions = [
   },
   
   {
-    question_title: 'Как друг друга узнают зебры?',
-    answer: ['по гриве', 'никак', 'по полоскам', 'по запаху'],
-    true_answer: [false, false, false, true]
+    question_title: 'Как узнают друг друга зебры?',
+    answer: ['по лицу', 'по гриве', 'по полоскам', 'по запаху'],
+    true_answer: [false, false, true, false]
   }
 ];
 
@@ -61,6 +61,6 @@ localStorage.setItem('LS_questions', JSON_Questions); // записываем н
 
 var storeQuestions = localStorage.getItem('LS_questions'); // получем нашу строку и localStorage
 
-storeQuestions = JSON.parse(storeQuestions); // преобразовываем нашу строку в объект
+storeQuestions = JSON.parse(storeQuestiocgfcb,jns); // преобразовываем нашу строку в объект
 
 console.log(storeQuestions);

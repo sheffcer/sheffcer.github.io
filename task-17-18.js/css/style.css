@@ -1,0 +1,390 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'tahoma', sans-serif;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: scroll;
+}
+.container {
+  width: 772px;
+  margin: 0 auto;
+}
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.page-header {
+  width: 772px;
+  height: 73px;
+  background: linear-gradient(to right, #82e04e 0%, #7cc329 43%, #74a403 100%);
+  box-shadow: 0 2px 5px rgba(93, 93, 95, 0.7);
+}
+.page-header__title {
+  font-size: 19px;
+  line-height: 19px;
+  padding-left: 82px;
+  padding-top: 20px;
+  color: #ffffff;
+}
+.page-header__description {
+  display: block;
+  margin-top: -20px;
+  font-size: 17px;
+  line-height: 5px;
+  font-weight: 400;
+  padding-left: 82px;
+  padding-top: 17px;
+}
+.clocks {
+  position: relative;
+  width: 380px;
+  margin-left: -20px;
+  margin-top: 100px;
+  float: right;
+}
+.clocks__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  width: 80px;
+  height: 90px;
+}
+.clocks__title {
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 2px solid rgba(88, 88, 90, 0.9);
+  color: #424244;
+}
+.clock {
+  border-radius: 50%;
+  padding-bottom: 150px;
+  position: relative;
+  left: -10px;
+  width: 100px;
+  top: -40px;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.08);
+  transform: scale(0.8);
+}
+article.clock:hover .hours-container,
+article.clock:hover .minutes-container,
+article.clock:hover .seconds-container {
+  visibility: visible;
+}
+.clock::after {
+  background: url('../img/vec/clock_center.svg') no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  height: 10%;
+  z-index: 10;
+}
+.minutes-container,
+.hours-container,
+.seconds-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.hours-container {
+  animation: rotate 43200s infinite linear;
+}
+.linear .minutes-container {
+  animation: rotate 3600s infinite linear;
+}
+.linear .seconds-container {
+  animation: rotate 60s infinite linear;
+}
+.steps .minutes-container {
+  animation: rotate 3600s infinite steps(60);
+}
+.steps .seconds-container {
+  animation: rotate 60s infinite steps(60);
+}
+.local.steps .minutes-container {
+  animation: none;
+}
+.bounce .minutes-container {
+  transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+}
+.bounce .seconds-container {
+  transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+}
+.hours {
+  background: #000;
+  background: url('../img/vec/hours_arrow.svg') no-repeat;
+  background-position: 50% 50%;
+  background-size: 250%;
+  /*border:1px solid blue;*/
+  width: 3.5%;
+  height: 40%;
+  position: absolute;
+  left: 48.25%;
+  top: 22%;
+  transform-origin: 50% 71%;
+}
+.minutes {
+  background: #000;
+  background: url('../img/vec/min_arrow.svg') no-repeat;
+  background-position: 50% 50%;
+  background-size: 165%;
+  width: 3.5%;
+  height: 55%;
+  position: absolute;
+  left: 48.25%;
+  top: 7%;
+  transform-origin: 50% 78.5%;
+}
+.seconds {
+  /*background: red;*/
+  background: url('../img/vec/sec_arrow.svg') no-repeat;
+  background-position: 50% 0%;
+  background-size: 230%;
+  width: 1.5%;
+  height: 42%;
+  position: absolute;
+  left: 49.25%;
+  top: 18%;
+  transform-origin: 50% 78.5%;
+  z-index: 8;
+  /*border:1px solid green;*/
+}
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+/*.clock.station:hover{
+  background: #F08080  no-repeat center;
+  background-size: 95%;
+}*/
+.clock.station {
+  /* background: #F08080;*/
+  background: url('../img/vec/clock_background.svg') no-repeat;
+  background-size: 100%;
+  background-position: 50.2% 50.1%;
+  /*box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2) inset;*/
+}
+.hours.angled {
+  transform: rotateZ(-40deg);
+}
+.minutes.angled {
+  transform: rotateZ(40deg);
+}
+.map {
+  margin-top: 62px;
+  float: left;
+}
+.map__item {
+  min-width: 290px;
+  min-height: 50px;
+  margin-bottom: 15px;
+}
+.map__description {
+  float: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #58585a;
+}
+.map__img {
+  float: left;
+  margin-left: 20px;
+}
+.icon {
+  background-image: url("../img/Location_icon.png");
+  position: absolute;
+  width: 25px;
+  height: 33px;
+}
+.icon--usa {
+  left: -70px;
+  top: -10px;
+}
+.icon--europe {
+  left: 70px;
+  top: -35px;
+}
+.icon--ukraine {
+  left: 95px;
+  top: -40px;
+}
+.icon--honkong {
+  left: 240px;
+  top: 15px;
+}
+.features {
+  margin-top: 70px;
+  width: 772px;
+  background-color: #e6e6e6;
+}
+.features__item {
+  margin-top: 6px;
+  width: 254px;
+  height: 127px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 6px;
+}
+.features__item:nth-child(4) {
+  margin-top: 0;
+}
+.features__item:nth-child(5) {
+  margin-top: 0;
+}
+.features__description {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+}
+.features__item--red {
+  background-color: #941f65;
+}
+.features__item--orange {
+  background-color: #ef8a20;
+}
+.features__item--violet {
+  background-color: #6fbeb8;
+}
+.features__item--green {
+  background-color: #00964c;
+  margin-left: 130px;
+}
+.features__item--blue {
+  background-color: #1b75b1;
+}
+.features__img {
+  text-align: center;
+  height: 40px;
+  padding-top: 15px;
+  margin: 0 auto;
+}
+.goods {
+  margin-top: 35px;
+  width: 772px;
+  height: 315px;
+  background-color: #e6e6e6;
+}
+.goods__item {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  width: 170px;
+  height: 126px;
+  background: linear-gradient(to bottom, #1e1a1b 2%, #5b595a 52%, #9b999a 100%);
+}
+.goods__main-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #61B211;
+  padding-top: 10px;
+}
+.goods__link {
+  display: block;
+  z-index: 10;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.goods__link:hover {
+  color: #8ed762;
+}
+.goods__wrapper {
+  width: 730px;
+  margin-left: 30px;
+  margin-top: -15px;
+}
+.goods__img {
+  position: absolute;
+  z-index: 1;
+}
+.goods__img--1 {
+  top: 65px;
+  left: 25px;
+}
+.goods__img--2 {
+  top: 25px;
+  left: 80px;
+}
+.goods__img--3 {
+  top: 35px;
+  left: 15px;
+  z-index: 1;
+}
+.goods__img--4 {
+  top: 27px;
+  left: 85px;
+}
+.goods__img--5 {
+  top: 20px;
+  left: 70px;
+}
+.goods__img--6 {
+  top: 15px;
+  left: 70px;
+}
+.goods__img--7 {
+  top: 30px;
+  left: 30px;
+  z-index: 1;
+}
+.goods__img--8 {
+  top: 33px;
+  left: 75px;
+}
+.article {
+  padding-top: 20px;
+  width: 730px;
+  margin: 0 auto;
+}
+.article::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.article__item {
+  float: left;
+  width: 356px;
+  margin-left: 9px;
+  font-family: 'tahoma', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+.page-footer {
+  margin-top: 10px;
+  width: 772px;
+  height: 49px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  background: linear-gradient(to bottom, #7ed13b 0%, #78b519 100%);
+}
+.page-footer__description {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}

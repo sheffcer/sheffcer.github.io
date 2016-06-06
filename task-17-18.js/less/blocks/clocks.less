@@ -1,18 +1,173 @@
 .clocks {
-  margin-top: 208px;
-  margin-right: 30px;
+  position: relative;
+  width: 380px;
+  margin-left: -20px;
+  margin-top: 100px;
   float: right;
-  outline: 1px dotted yellow;
+//  outline: 1px dotted yellow;
 
   &__item {
     display: inline-block;
     vertical-align: top;
+    margin-right: 10px;
     width: 80px;
     height: 90px;
   }
 
   &__title {
     font-size: 14px;
+    text-align: center;
+    border-bottom: 2px solid rgba(88, 88, 90, 0.9);
+    color: #424244;
   }
 
+}
+
+.clock {
+  border-radius: 50%;
+  padding-bottom: 150px;
+  position: relative;
+  left: -10px;
+  width: 100px;
+  top: -40px;
+  transition: all 0.2s ease-in-out;
+  transform: scale( 0.08 );
+  transform: scale(0.8);
+}
+
+article.clock:hover .hours-container,
+article.clock:hover .minutes-container,
+article.clock:hover .seconds-container{
+  visibility:visible;
+}
+
+.clock::after {
+  background:url('../img/vec/clock_center.svg') no-repeat;
+  background-size:100%;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  height: 10%;
+  z-index: 10;
+}
+
+.minutes-container, .hours-container, .seconds-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hours-container {
+  animation: rotate 43200s infinite linear;
+}
+
+.linear .minutes-container {
+  animation: rotate 3600s infinite linear;
+}
+.linear .seconds-container {
+  animation: rotate 60s infinite linear;
+}
+
+.steps .minutes-container {
+  animation: rotate 3600s infinite steps(60);
+}
+.steps .seconds-container {
+  animation: rotate 60s infinite steps(60);
+}
+
+.local.steps .minutes-container {
+  animation: none;
+}
+
+.bounce .minutes-container {
+  transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+}
+.bounce .seconds-container {
+  transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+}
+
+.hours {
+  background: #000;
+  background: url('../img/vec/hours_arrow.svg') no-repeat;
+  background-position: 50% 50%;
+  background-size: 250%;
+    /*border:1px solid blue;*/
+  width: 3.5%;
+  height: 40%;
+  position: absolute;
+  left: 48.25%;
+  top: 22%;
+  transform-origin: 50% 71%;
+}
+
+.minutes {
+ background: #000;
+ background: url('../img/vec/min_arrow.svg') no-repeat;
+ background-position: 50% 50%;
+ background-size: 165%;
+ width: 3.5%;
+ height: 55%;
+ position: absolute;
+ left: 48.25%;
+ top: 7%;
+ transform-origin: 50% 78.5%;
+}
+
+.seconds {
+  /*background: red;*/
+  background: url('../img/vec/sec_arrow.svg') no-repeat;
+  background-position: 50% 0%;
+  background-size: 230%;
+  width: 1.5%;
+  height: 42%;
+  position: absolute;
+  left: 49.25%;
+  top: 18%;
+  transform-origin: 50% 78.5%;
+  z-index: 8;
+  /*border:1px solid green;*/
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+/*.clock.station:hover{
+  background: #F08080  no-repeat center;
+  background-size: 95%;
+}*/
+
+.clock.station {
+ /* background: #F08080;*/
+ background: url('../img/vec/clock_background.svg') no-repeat;
+
+ background-size: 100%;
+ background-position: 50.2% 50.1%;
+// border: 1px solid blue;
+
+  /*box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2) inset;*/
+
+}
+
+.hours.angled {
+  transform: rotateZ(-40deg);
+}
+
+.minutes.angled {
+  transform: rotateZ(40deg);
 }

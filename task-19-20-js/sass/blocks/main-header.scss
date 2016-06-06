@@ -1,0 +1,27 @@
+.container {
+  width: 1161px;
+  margin: 0 auto;
+  outline: 1px dotted green;
+  @include clearfix;
+}
+
+//.page-header {
+// width: 772px;
+// height: 73px;
+// outline: 1px dotted red;
+//
+//  &__title {
+//    font-size: 19px;
+////    text-align: center;
+//    line-height: 19px;
+//    padding-left: 82px;
+//  }
+//
+//  &__description {
+//    font-size: 17px;
+////    text-align: center;
+//    line-height: 10px;
+//    padding-left: 82px;
+//  }
+//}
+//

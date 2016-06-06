@@ -1,5 +1,4 @@
-build/
-_design/
+_design
 node_modules/
 .DS_Store
 Thumbs.db
@@ -8,4 +7,5 @@ Thumbs.db
 *.log
 *.psd
 *.ai
-img/test/
+css/*.css
+.sass-cache/

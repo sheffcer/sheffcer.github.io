@@ -1,19 +1,103 @@
 .goods {
-  margin-top: 30px;
+//  position: relative;
+  margin-top: 35px;
   width: 772px;
-  height: 386px;
-  outline: 1px dotted cyan;
+  height: 315px;
+  background-color: #e6e6e6;
+//  outline: 1px dotted cyan;
 
   &__item {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-right: 5px;
     display: inline-block;
     vertical-align: top;
-    width: 175px;
+    font-size: 0;
+    width: 170px;
     height: 126px;
-    outline: 1px dotted grey;
+    background: linear-gradient(to bottom, #1e1a1b 2%,#5b595a 52%,#9b999a 100%);
+//    outline: 1px dotted grey;
   }
 
   &__main-title {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #61B211;
+    padding-top: 10px;
   }
+
+  &__link {
+    display: block;
+    z-index: 10;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+
+  &__link:hover {
+    color: #8ed762;
+  }
+
+  &__wrapper {
+    width: 730px;
+//    margin: 0 auto;
+    margin-left: 30px;
+    margin-top: -15px;
+  }
+
+  &__img {
+    position: absolute;
+    z-index: 1;
+    }
+
+
+  &__img--1 {
+    top: 65px;
+    left: 25px;
+  }
+
+  &__img--2 {
+    top: 25px;
+    left: 80px;
+  }
+
+  &__img--3 {
+    top: 35px;
+    left: 15px;
+    z-index: 1;
+  }
+
+  &__img--4 {
+    top: 27px;
+    left: 85px;
+  }
+
+  &__img--5 {
+    top: 20px;
+    left: 70px;
+  }
+
+  &__img--6 {
+    top: 15px;
+    left: 70px;
+  }
+
+  &__img--7 {
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+  }
+
+  &__img--8 {
+    top: 33px;
+    left: 75px;
+  }
+
 }

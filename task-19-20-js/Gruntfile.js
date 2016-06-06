@@ -5,11 +5,11 @@ module.exports = function(grunt) {
   require('time-grunt')(grunt);
 
   grunt.initConfig({
-    less: {
+    sass: {
       style: {
         files: {
-          "css/style.css": "less/style.less",
-          "css/normalize.css": "less/normalize.less"
+          "css/style.css": "sass/style.scss",
+          "css/normalize.css": "sass/normalize.scss"
         }
       }
     },
@@ -50,8 +50,8 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ["less/**/*.less"],
-      tasks: ["less", "postcss"],
+      files: ["sass/**/*.scss"],
+      tasks: ["sass", "postcss"],
       options: {
         spawn: false
       }
@@ -68,31 +68,12 @@ module.exports = function(grunt) {
       }
     },
 
-    concat: {
-     options: {
-      separator: ';',
-    },
-     dist: {
-      src: ['js/test1.js', 'js/test2.js'],
-      dest: 'build/main.js',
-     }
-    },
-
-    uglify: {
-      dist: {
-        src: ['build/main.js'],
-        dest: 'build/main.min.js'
-      }
-    }
-
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
   grunt.registerTask("build", [
-    "less",
-    "postcss"
-//    "csso",
-//    "concat",
-//    "uglify"
+    "sass",
+    "postcss",
+    "csso"
   ]);
 };
