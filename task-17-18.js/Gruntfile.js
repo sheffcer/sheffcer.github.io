@@ -68,22 +68,22 @@ module.exports = function(grunt) {
       }
     },
 
-    concat: {
-     options: {
-      separator: ';',
-    },
-     dist: {
-      src: ['js/test1.js', 'js/test2.js'],
-      dest: 'build/main.js',
-     }
-    },
+//    concat: {
+//     options: {
+//      separator: ';',
+//    },
+//     dist: {
+//      src: ['js/test1.js', 'js/test2.js'],
+//      dest: 'build/main.js',
+//     }
+//    },
 
-    uglify: {
-      dist: {
-        src: ['build/main.js'],
-        dest: 'build/main.min.js'
-      }
-    }
+//    uglify: {
+//      dist: {
+//        src: ['build/main.js'],
+//        dest: 'build/main.min.js'
+//      }
+//    }
 
   });
 

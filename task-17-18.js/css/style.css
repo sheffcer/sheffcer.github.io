@@ -273,6 +273,10 @@ article.clock:hover .seconds-container {
   padding-top: 15px;
   margin: 0 auto;
 }
+.features__item:hover img {
+  transform: rotate(360deg) scale(1.2);
+  transition: all 0.4s ease-in-out;
+}
 .goods {
   margin-top: 35px;
   width: 772px;
@@ -286,10 +290,20 @@ article.clock:hover .seconds-container {
   margin-right: 5px;
   display: inline-block;
   vertical-align: top;
+  cursor: pointer;
+  opacity: 1;
   font-size: 0;
   width: 170px;
   height: 126px;
   background: linear-gradient(to bottom, #1e1a1b 2%, #5b595a 52%, #9b999a 100%);
+}
+.goods__item:hover a {
+  color: #8ed762;
+}
+.goods__item:hover .goods__img {
+  transform: scale(1.1);
+  opacity: 0.6;
+  transition: 0.3s ease-in-out;
 }
 .goods__main-title {
   text-align: center;
@@ -302,6 +316,8 @@ article.clock:hover .seconds-container {
 .goods__link {
   display: block;
   z-index: 10;
+  width: 170px;
+  height: 126px;
   font-size: 13px;
   font-weight: 400;
   text-decoration: none;
@@ -321,6 +337,10 @@ article.clock:hover .seconds-container {
 .goods__img {
   position: absolute;
   z-index: 1;
+  transition: all 0.4s ease-in-out;
+}
+.goods__img:hover img {
+  transform: rotate(360deg);
 }
 .goods__img--1 {
   top: 65px;
