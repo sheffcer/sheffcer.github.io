@@ -299,6 +299,7 @@ article.clock:hover .seconds-container {
 }
 .goods__item:hover a {
   color: #8ed762;
+  transition: 0.3s ease-in-out;
 }
 .goods__item:hover .goods__img {
   transform: scale(1.1);
