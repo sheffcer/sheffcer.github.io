@@ -60,7 +60,9 @@ var dayDiff = (function() {
     if (birthdayDate > dayNow) {
       birthdayDate.setFullYear(year - 1, 11, 27);
     }
-  return Math.ceil((dayNow.valueOf() - birthdayDate.valueOf()) /24/60/60/1000);
+  return Math.ceil((dayNow - birthdayDate) /24/60/60/1000);
 })();
 
 console.log(dayDiff);
+
+
