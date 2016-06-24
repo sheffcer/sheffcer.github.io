@@ -38,6 +38,12 @@
 var xxx = getLastBirthday();
 console.log(xxx);
 var now  = new Date();
-var dayPassed = (now -  getLastBirthday())/24/60/60/1000;
-console.log(dayPassed);
+//var dayPassed = (now -  getLastBirthday())/24/60/60/1000;
+//console.log(dayPassed);
 
+function dayDiff(a, b) {
+  return (a - b)/24/60/60/1000;
+}
+
+var dayPassed = dayDiff(new Date(), getLastBirthday());
+console.log(dayPassed);
