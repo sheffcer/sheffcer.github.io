@@ -1,0 +1,39 @@
+{
+  "name": "Canon-g1400",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cтраница о нас",
+  "author": "Александр Шевко",
+  "repository": {
+    "type": "http",
+    "url": "https://github.com/sheffcer/sheffcer.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sheffcer/sheffcer.github.io/issues"
+  },
+  "homepage": "hhttps://github.com/sheffcer/sheffcer.github.io",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "editorconfig-tools": "0.1.1",
+    "grunt": "0.4.5",
+    "grunt-browser-sync": "2.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-less": "1.2.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-csso": "^1.0.0",
+    "grunt-gh-pages": "^1.1.0",
+    "grunt-postcss": "^0.7.2",
+    "jshint": "^2.9.2",
+    "load-grunt-tasks": "^3.4.1",
+    "time-grunt": "^1.3.0"
+  },
+  "scripts": {
+    "test": "editorconfig-tools check *",
+    "build": "grunt less && grunt postcss",
+    "start": "npm run build && grunt serve"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}
