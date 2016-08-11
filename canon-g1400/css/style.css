@@ -59,6 +59,7 @@ body {
 }
 .article__title {
   text-align: center;
+  text-transform: uppercase;
 }
 .article__subtitle {
   text-align: center;
