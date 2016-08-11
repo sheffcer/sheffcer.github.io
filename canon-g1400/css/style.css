@@ -1,8 +1,9 @@
 body {
+  @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
   margin: 0;
   padding: 0;
   width: 800px;
-  font-family: 'tahoma', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   margin: 0 auto;
   outline: 1px dotted red;
 }
@@ -53,7 +54,7 @@ body {
   float: left;
   width: 356px;
   margin-left: 9px;
-  font-family: 'tahoma', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   font-weight: 400;
 }
@@ -63,4 +64,10 @@ body {
 }
 .article__subtitle {
   text-align: center;
+}
+.article__description span {
+  color: red;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
 }
