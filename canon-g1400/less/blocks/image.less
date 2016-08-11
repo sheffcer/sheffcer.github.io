@@ -26,8 +26,27 @@
     margin-bottom: 30px;
   }
 
-//  &__photo {
-//    margin: 0 auto;
-//  }
+  &__item img {
+    box-shadow: 0 0 4px grey;
+  }
+
+  &__item img:hover {
+    box-shadow: 1px 1px 4px grey;
+    transition: 0.4s;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__item a:hover {
+    text-decoration: underline;
+    color: blue;
+    transition: 0.4s;
+  }
+
 }
 

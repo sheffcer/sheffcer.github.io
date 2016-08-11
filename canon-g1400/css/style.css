@@ -40,6 +40,24 @@ body {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+.image__item img {
+  box-shadow: 0 0 4px grey;
+}
+.image__item img:hover {
+  box-shadow: 1px 1px 4px grey;
+  transition: 0.4s;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.image__item a {
+  text-decoration: none;
+  color: black;
+}
+.image__item a:hover {
+  text-decoration: underline;
+  color: blue;
+  transition: 0.4s;
+}
 .article {
   padding-top: 20px;
   width: 730px;
@@ -54,6 +72,10 @@ body {
   float: left;
   width: 356px;
   margin-left: 9px;
+  outline: 1px dotted blue;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
 }
 .article__title {
   text-align: center;
