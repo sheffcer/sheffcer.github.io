@@ -4,6 +4,7 @@ body {
   padding: 0;
   width: 800px;
   font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
   margin: 0 auto;
   outline: 1px dotted red;
 }
@@ -86,10 +87,15 @@ body {
 }
 .article__description {
   text-indent: 15px;
+  text-align: justify;
+  line-height: 18px;
 }
 .article__description span {
   color: red;
   font-family: 'PT Sans', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
+}
+.article__list {
+  list-style-type: square;
 }
