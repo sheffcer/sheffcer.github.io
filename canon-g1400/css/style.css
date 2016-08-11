@@ -52,11 +52,11 @@ body {
 }
 .image__item a {
   text-decoration: none;
-  color: black;
+  color: indigo;
 }
 .image__item a:hover {
   text-decoration: underline;
-  color: blue;
+  color: indigo;
   transition: 0.4s;
 }
 .article {
@@ -90,6 +90,12 @@ body {
   text-align: justify;
   line-height: 18px;
 }
+.article__description a {
+  text-decoration: none;
+}
+.article__description a:hover {
+  text-decoration: underline;
+}
 .article__description span {
   color: red;
   font-family: 'PT Sans', sans-serif;
@@ -98,4 +104,11 @@ body {
 }
 .article__list {
   list-style-type: square;
+}
+.article__list a {
+  text-decoration: none;
+  color: indigo;
+}
+.article__list a:hover {
+  text-decoration: underline;
 }
