@@ -92,9 +92,11 @@ body {
 }
 .article__description a {
   text-decoration: none;
+  color: indigo;
 }
 .article__description a:hover {
   text-decoration: underline;
+  color: indigo;
 }
 .article__description span {
   color: red;
@@ -111,4 +113,5 @@ body {
 }
 .article__list a:hover {
   text-decoration: underline;
+  color: indigo;
 }
