@@ -62,6 +62,9 @@ body {
 .article__subtitle {
   text-align: center;
 }
+.article__description {
+  text-indent: 15px;
+}
 .article__description span {
   color: red;
   font-family: 'PT Sans', sans-serif;
